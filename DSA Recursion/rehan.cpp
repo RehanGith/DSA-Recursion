@@ -10,6 +10,12 @@ int count_digits(int n) {
 	}
 }
 
+int sum(int n) {
+	if (n <= 1)
+		return n;
+	else
+		return n + sum(n - 1);
+}
 
 int main() {
 	cout << count_digits(123) << endl;
